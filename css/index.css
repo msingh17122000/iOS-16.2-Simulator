@@ -45,6 +45,7 @@ body{
 .mainContainer{
   height: 100%;
   backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 }
 .topNotificationBar{
   display: grid;
