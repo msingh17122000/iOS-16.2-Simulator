@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS 16.2</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="assets/svgs/appleLogo.svg" type="image/x-icon">
+    </link>
+</head>
+
+<body id="root">
+    <div class="appleLoadingPage" id="loadingPage">
+        <div class="appleLogo"><img src="/assets/svgs/appleLogo.svg" height="80px" width="80px"></div>
+    </div>
+
+    <div id="main">
+        <div class="mainContainer">
+            <div class="topNotificationBar">
+                <div class="leftSideBar">
+                    <script>
+                       var today = new Date();
+                    var time = today.toLocaleString([], {
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                    document.write(time); 
+                    </script>
+                </div>
+                <div class="rightSideBar">
+                    <div><img src="./assets/svgs/signal.svg" width="20px" height="16px"></div>
+                    <div><img src="./assets/svgs/iosWifi.svg" width="20px"></div>
+                    <div><img src="./assets/svgs/battery2.svg" width="26px"></div>
+
+                </div>
+            </div>
+
+
+            <div class="largeWidgets">
+                <div class="weatherContainer">
+                    <div class="IconWeather">
+                        <div class="IconText"> Location <br>Services is off</div>
+                    </div>
+                    <div class="IconLabel">Weather</div>
+                </div>
+                <div class="calenderContainer">
+                    <div class="IconCalender">
+                        <div class="IconText2">
+                            <div class="dayText">
+                                <script>
+                                    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                                    const d = new Date();
+                                    let day = weekday[d.getDay()];;
+                                    document.write(day);
+                                </script>
+                            </div>
+                            <div class="dateText">
+                                <script>
+                                    var today = new Date();
+                                    var date = today.getDate();
+                                    document.write(date);
+
+                                </script>
+                            </div>
+                            <div class="eventsText">No more <br>events today</div>
+                        </div>
+                    </div>
+                    <div class="IconLabel">Calender</div>
+                </div>
+            </div>
+
+            <div class="IconsContainer">
+                <div><img src="./assets/svgs/AppIcons/apple-camera.svg"width="70px"><div class="IconsLabel">Camera</div></div>
+                <div><img src="./assets/svgs/AppIcons/apple-photos.svg"width="70px"><div class="IconsLabel">Photos</div></div>
+                <div><img src="./assets/svgs/AppIcons/apple-music.svg"width="70px"><div class="IconsLabel">Music</div></div>
+                <div><img src="./assets/svgs/AppIcons/apple-store.svg"width="70px"><div class="IconsLabel">App Store</div></div>
+                <div><img src="./assets/svgs/AppIcons/apple-safari.svg"width="70px"><div class="IconsLabel">Safari</div></div>
+                <div><img src="./assets/svgs/AppIcons/apple-settings.svg"width="70px"><div class="IconsLabel">Settings</div></div>
+                <div><img src="./assets/svgs/AppIcons/apple-phone.svg"width="70px"><div class="IconsLabel">Phone</div></div>
+                <div><img src="./assets/svgs/AppIcons/apple-tv.svg"width="70px"><div class="IconsLabel">TV</div></div>
+                <div><img src="./assets/svgs/AppIcons/apple-clock.svg"width="70px"><div class="IconsLabel">Clock</div></div>
+                <div><img src="./assets/svgs/AppIcons/apple-messages.svg"width="70px"><div class="IconsLabel">Messages</div></div>
+                </div>
+                
+             <div class="BottomDockContainer">   
+                <div class="bottomDock">
+                <div><img src="./assets/svgs/AppIcons/apple-phone.svg"width="70px"></div>
+                <div><img src="./assets/svgs/AppIcons/apple-safari.svg"width="70px"></div>
+                <div><img src="./assets/svgs/AppIcons/apple-messages.svg"width="70px"></div>
+                <div><img src="./assets/svgs/AppIcons/apple-music.svg"width="70px"></div>  
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        var today = new Date();
+        var dateold = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var date = today.toDateString();
+        document.write(date);
+
+    </script>
+
+    <script>
+        var today = new Date();
+        var time = today.toLocaleString([], {
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+
+    </script>
+
+
+</body>
+<script src="/js/index.js"></script>
+
+</html>
